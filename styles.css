@@ -1,0 +1,88 @@
+body, main{
+    display: flex;
+}
+body{
+    flex-direction: column;
+    background-color: azure;
+}
+main{
+    flex-direction: row;
+    flex: auto;
+}
+article{
+    flex: 2;
+    overflow-y: auto;
+}
+aside{
+    flex: 1;
+    overflow-y: auto;
+}
+nav.custom_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.hero{
+    width: 100%;
+    background-image: url("https://image.freepik.com/free-vector/halftone-background-with-lines_23-2148907691.jpg");
+    display: block;
+    justify-content: space-around;
+}
+.hero-row{
+    text-align: center;
+    width: 70%;
+    padding: 50px;
+}
+.hero-text{
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: space-around;
+    padding: 50px;
+    align-items: center;
+
+}
+.col-img{
+    flex: 1;
+}
+.col-text{
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+.mission-text{
+    text-align: justify;
+}
+.contact-heading{
+    padding-bottom: 0;
+}
+
+.contact-row{
+    padding-top: 0;
+}
+.contact-links{
+    list-style-type: none;
+    justify-content: space-between;
+}
+.contact-links a{
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+}
+
+mark{
+    background-color: aliceblue;
+}
+.tweets-row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.col-tweets{
+    text-align: center;
+}
