@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+/*font-family: 'Inter', sans-serif;*/
 body, main{
     display: flex;
 }
 body{
     flex-direction: column;
-    background-color: azure;
 }
 main{
     flex-direction: row;
@@ -19,13 +20,31 @@ aside{
 }
 nav.custom_nav{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
+.nav-links{
+    justify-content: center;
+    align-items: center;
+}
+.none{
+    visibility: hidden;
+}
+
 .hero{
     width: 100%;
     background-image: url("https://image.freepik.com/free-vector/halftone-background-with-lines_23-2148907691.jpg");
     display: block;
     justify-content: space-around;
+    border: white 1px solid;
+    border-radius: 10px;
 }
 .hero-row{
     text-align: center;
@@ -34,12 +53,13 @@ nav.custom_nav{
 }
 .hero-text{
     color: white;
+    font-family: 'Inter', sans-serif;
 }
 .row{
     display: flex;
     flex-direction: row;
     flex: auto;
-    justify-content: space-around;
+    justify-content: center;
     padding: 50px;
     align-items: center;
 
@@ -51,6 +71,17 @@ nav.custom_nav{
     flex: 1;
     align-items: center;
     text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 1.3px;
+    padding: 10px;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline darkred;
+}
+.mission{
+    background-image: url("https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1094.jpg");
 }
 .mission-text{
     text-align: justify;
@@ -58,21 +89,12 @@ nav.custom_nav{
 .contact-heading{
     padding-bottom: 0;
 }
-
 .contact-row{
     padding-top: 0;
-}
-.contact-links{
-    list-style-type: none;
-    justify-content: space-between;
-}
-.contact-links a{
-    text-decoration: none;
 }
 footer{
     text-align: center;
 }
-
 mark{
     background-color: aliceblue;
 }
@@ -84,5 +106,9 @@ mark{
     align-items: center;
 }
 .col-tweets{
+    text-align: center;
+}
+.js-img{
+    justify-content: center;
     text-align: center;
 }

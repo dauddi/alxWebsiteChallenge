@@ -10,22 +10,34 @@
     <link rel="stylesheet" href="styles.css">
     <script src="behavior.js"></script>
 </head>
-<body class="works_on_smartphone">
+<body class="works_on_smartphone" style="font-family: 'Inter', sans-serif;">
 
 <header>
+
     <nav class="custom_nav">
         <div class="logo">
-            <a href="index.html"><img src="https://alx-apply.hbtn.io/brand_alx/alx-logo.png" width="100" height="auto" alt=""></a>
+            <a href="index.html"><img src="https://alx-apply.hbtn.io/brand_alx/alx-logo.png" width="120" height="auto" alt=""></a>
         </div>
-        <div class="custom-nav">
+
+        <div class="nav-container">
+            <div class="none">
+                <p>alx</p>
+            </div>
+            <div class="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="mission.html">Mission</a></li>
                 <li><a href="tweets.html">Tweets</a></li>
             </ul>
+            </div>
+            <div class="right" style="text-align: right">
+            <a href="https://developers.facebook.com/docs/plugins/share-button">Facebook</a>
+            <a href="https://about.twitter.com/resources/buttons#tweet">Twitter</a>
+        </div>
         </div>
     </nav>
+
 </header>
 
 <main>
@@ -34,7 +46,7 @@
     <div class="hero">
         <div class="hero-row">
             <div class="hero-text">
-                <h1>Welcome to my ALX Application Experience Website Challenge Project</h1>
+                <h1 class="heading">Welcome to my ALX Application Experience Website Challenge Project</h1>
             </div>
         </div>
     </div>
@@ -47,7 +59,7 @@
                 </div>
 
                 <div class="col-text">
-                    <h2><mark>WHO I'M I ??</mark></h2>
+                    <h2 class="heading"><mark>WHO I'M I ??</mark></h2>
                     <p>My name is Davis Okioma, a 22 year old from Nairobi, Kenya. I've been a code enthusiast and hobbyist for quite some time and now about to make the transition to Software Engineering courtesy of ALX.</p>
                     <a href="about.html">MORE ABOUT ME</a>
                 </div>
@@ -55,10 +67,10 @@
     </section>
 
 <!--    my mission section-->
-    <section class="container">
+    <section class="mission">
         <div class="row">
             <div class="col-text">
-                <h2><mark>MISSION STATEMENT</mark></h2>
+                <h3 class="heading"><mark>MISSION STATEMENT</mark></h3>
                 <p class="mission-text">My mission is to use my software engineering skills to design, develop and launch sustainable and scalable solutions to problems in my community.</p>
                 <a href="mission.html">READ MORE</a>
             </div>
@@ -68,25 +80,24 @@
 <!--    social section-->
     <section class="container">
         <div class="col-text contact-heading">
-            <h1>Get Social. <mark>Lets Connect.</mark></h1>
+            <h3 class="heading">Get Social. <mark>Lets Connect.</mark></h3>
         </div>
         <div class="row contact-row">
             <div class="col-img">
-                <img src="https://image.freepik.com/free-vector/email-marketing-internet-chatting-24-hours-support_335657-3009.jpg" height="300px" alt="">
+                <img src="https://image.freepik.com/free-vector/mobile-marketing-concept-illustration_114360-1497.jpg" height="300px" alt="">
             </div>
-
-            <div class="col-text">
-                <ul class="contact-links">
-                    <li><a href="#"><img src="https://t4.ftcdn.net/jpg/02/85/53/15/240_F_285531517_M6XBdJsMxEE0xqOooSmG3JIn1b7cdrmq.jpg" height="30" alt="">LinkedIn</a></li>
-                    <li><a href="#"><img src="https://image.flaticon.com/icons/png/128/2111/2111392.png" height="25" alt=""> Facebook</a></li>
-                    <li><a href="#"><img src="https://image.flaticon.com/icons/png/128/733/733635.png" height="27" alt=""> Twitter</a></li>
-                    <li><a href="#"><img src="https://image.flaticon.com/icons/png/128/2111/2111425.png" height="30" alt=""> Github</a></li>
-                    <li><a href="#"><img src="https://image.flaticon.com/icons/png/128/1384/1384031.png" height=27 alt=""> Instagram</a></li>
-                </ul>
+            <div class="col-text" style="text-align: left">
+                    <p><a href="https://www.linkedin.com/in/kunta-dev/"><img src="https://t4.ftcdn.net/jpg/02/85/53/15/240_F_285531517_M6XBdJsMxEE0xqOooSmG3JIn1b7cdrmq.jpg" height="30" alt="">LinkedIn</a></p>
+                    <p><a href="https://web.facebook.com/davis.okioma.9/"><img src="https://image.flaticon.com/icons/png/128/2111/2111392.png" height="25" alt=""> Facebook</a></p>
+                    <p><a href="https://twitter.com/DavisOkioma"><img src="https://image.flaticon.com/icons/png/128/733/733635.png" height="27" alt=""> Twitter</a></p>
+                    <p><a href="https://github.com/kunta969"><img src="https://image.flaticon.com/icons/png/128/2111/2111425.png" height="30" alt=""> Github</a></p>
             </div>
 
         </div>
     </section>
+        <div class="js-img">
+            <img id="smart_thumbnail" class="small" src="https://images.unsplash.com/photo-1586542276867-832a2309a705?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" alt="">
+        </div>
 
     </article>
 
@@ -103,7 +114,7 @@
             };
             */
             (function() { // DON'T EDIT BELOW THIS LINE
-                let d = document, s = d.createElement('script');
+                var d = document, s = d.createElement('script');
                 s.src = "https://3-236-229-120.disqus.com/embed.js";
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
