@@ -55,6 +55,16 @@ nav.custom_nav{
     color: white;
     font-family: 'Inter', sans-serif;
 }
+@media screen and (max-width: 620px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        justify-content: center;
+        padding: 50px;
+        align-items: center;
+    }
+}
 .row{
     display: flex;
     flex-direction: row;
@@ -79,6 +89,7 @@ nav.custom_nav{
 .heading{
     text-align: center;
     text-decoration: underline darkred;
+    line-height: 10px;
 }
 .mission{
     background-image: url("https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1094.jpg");
@@ -96,7 +107,7 @@ footer{
     text-align: center;
 }
 mark{
-    background-color: aliceblue;
+    background-color: yellowgreen;
 }
 .tweets-row{
     width: 100%;
